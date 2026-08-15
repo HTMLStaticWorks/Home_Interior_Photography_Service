@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumen — Fine Architectural & Interior Photography Studio</title>
-  <meta name="description" content="Editorial architectural and luxury interior photography for designers, real estate professionals, and premium hospitality brands.">
+  <title>Portfolio — Lumen Architectural & Interior Photography Showcase</title>
+  <meta name="description" content="Explore our portfolio of high-end architectural elevations, residential interiors, hospitality staging, and commercial property photography.">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Lumen — Fine Architectural & Interior Photography Studio">
-  <meta property="og:description" content="Premium, image-driven photography portfolio capturing residential, architecture, real estate, and hospitality spaces.">
-  <meta property="og:image" content="assets/images/hero/hero-1.webp">
+  <meta property="og:title" content="Portfolio — Lumen Architectural & Interior Photography Showcase">
+  <meta property="og:description" content="View luxury spaces documented with precision light studies and editorial framing.">
+  <meta property="og:image" content="assets/images/residential/res-1.webp">
   <meta property="og:type" content="website">
   
   <!-- Stylesheets -->
@@ -18,13 +18,13 @@
   <link rel="stylesheet" href="assets/css/dark.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   
-  <!-- Theme Toggle (executed early to avoid flash) -->
+  <!-- Theme Toggle -->
   <script src="assets/js/theme-toggle.js"></script>
 </head>
 <body>
 
   <!-- Navigation Header -->
-  <header class="header-editorial" id="mainHeader">
+  <header class="header-editorial scrolled" id="mainHeader">
     <div class="header-container">
       <a href="index.html" class="logo-editorial" id="headerLogo" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></a>
       
@@ -32,13 +32,13 @@
       <nav class="d-none d-lg-block" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-dropdown-wrapper">
-            <a href="index.html" class="nav-link-item active" id="homeMenuLink">Home</a>
+            <a href="index.html" class="nav-link-item" id="homeMenuLink">Home</a>
             <ul class="nav-dropdown" aria-label="Home Submenu">
               <li class="nav-dropdown-item"><a href="index.html">Home 1 (Cinematic)</a></li>
               <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Editorial)</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html" class="nav-link-item" id="portfolioMenuLink">Portfolio</a></li>
+          <li><a href="portfolio.html" class="nav-link-item active" id="portfolioMenuLink">Portfolio</a></li>
           <li><a href="services.html" class="nav-link-item" id="servicesMenuLink">Services</a></li>
           <li><a href="shoot-enquiry.html" class="nav-link-item">Enquiry</a></li>
           <li><a href="blog.html" class="nav-link-item">Blog</a></li>
@@ -48,7 +48,7 @@
 
       <!-- Actions & CTA -->
       <div class="header-actions">
-        <!-- Theme Toggle Switch -->
+        <!-- Theme Toggle Button -->
         <button class="theme-toggle-btn" id="themeToggler" aria-label="Toggle dark/light theme">
           <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -104,179 +104,161 @@
     </div>
   </div>
 
-  <!-- Cinematic Hero Section -->
-  <section class="hero-cinematic" aria-label="Hero Showcase">
-    <div class="hero-bg-wrapper">
-      <img src="assets/images/hero/hero-1.webp" alt="Stunning high-end luxury kitchen and dining room interior" class="hero-bg-image slow-pan">
+  <!-- Portfolio Banner -->
+  <section class="section-padding" style="padding-top: 160px; padding-bottom: 50px;" aria-label="Portfolio Introduction">
+    <div class="container text-center">
+      <span class="about-subtitle">CREATIVE DOCUMENTATION</span>
+      <h1 class="display-5 font-serif mt-2 mb-3">Portfolio</h1>
+      <p class="text-secondary max-width-600 mx-auto font-sans">A curated visual catalog of structural designs, residential details, boutique hotels, and real estate marketing staging.</p>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="hero-subtitle">ARCHITECTURAL PHOTOGRAPHY</span>
-      <h1 class="hero-title">Spaces, Captured With Intention.</h1>
-      <p class="hero-description">Honest framing, precise light studies, and high-end styling for designers, developers, and premium hospitality brands.</p>
-      <div class="hero-actions-container">
-        <a href="portfolio.html" class="btn-editorial hero-btn-light">View Portfolio</a>
-        <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
+  </section>
+
+  <!-- Filter Buttons Container -->
+  <section aria-label="Portfolio Filtering Controls">
+    <div class="container">
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">ALL SPACES</button>
+        <button class="filter-btn" data-filter="residential">RESIDENTIAL</button>
+        <button class="filter-btn" data-filter="architecture">ARCHITECTURE</button>
+        <button class="filter-btn" data-filter="hospitality">HOSPITALITY</button>
+        <button class="filter-btn" data-filter="real-estate">REAL ESTATE</button>
+        <button class="filter-btn" data-filter="commercial">COMMERCIAL</button>
       </div>
     </div>
   </section>
 
-  <!-- Studio Introduction / Philosophy -->
-  <section class="section-padding" aria-label="Studio Introduction">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-9 col-lg-10 text-center fade-up-element">
-          <span class="about-subtitle">STUDIO PHILOSOPHY</span>
-          <h2 class="display-5 font-serif mt-2 mb-4">Capturing structural forms, delicate textures, and the silent interplay of light.</h2>
-          <p class="lead text-secondary font-sans" style="font-size: 1.15rem; font-weight: 300;">We believe that interior photography should feel editorial, not staged. Every project is documented with a deep reverence for the architect's details, the designer's selections, and the natural lighting patterns of the room. We deliver images that build premium brand equity.</p>
-          <div class="spacer-md"></div>
-          <a href="contact.html" class="btn-editorial-text">Learn More About Our Philosophy</a>
-        </div>
+  <!-- Masonry Output Grid -->
+  <section class="section-padding pt-0" style="min-height: 500px;" aria-label="Masonry Showcase">
+    <div class="container-fluid" style="padding: 0 4%;">
+      <div class="masonry-grid">
+        <!-- Rendered Dynamically by portfolio.js -->
       </div>
     </div>
   </section>
 
-  <!-- Featured Portfolio Grid -->
-  <section class="section-padding bg-white" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Featured Works">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col-md-8">
-          <span class="about-subtitle">HIGHLIGHTED WORKS</span>
-          <h2 class="display-6 font-serif mt-2 mb-0">Featured Commissions</h2>
-        </div>
-        <div class="col-md-4 text-md-end mt-3 mt-md-0">
-          <a href="portfolio.html" class="btn-editorial-text">Browse All Projects</a>
-        </div>
-      </div>
-
-      <!-- Asymmetric grid -->
-      <div class="row">
-        <!-- Project 1 (Large left) -->
-        <div class="col-md-7 mb-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/residential/res-1.webp" alt="Warm wooden panels and concrete details of a minimalist residence">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Residential Interior — Chennai</span>
-              <h3 class="portfolio-title">The Courtyard Residence</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 2 (Small right) -->
-        <div class="col-md-5 mb-5 mt-md-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/architecture/arch-1.webp" alt="External concrete facade of an architectural villa at sunset">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Architecture — Bangalore</span>
-              <h3 class="portfolio-title">The Brutalist Villa</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 3 (Small left) -->
-        <div class="col-md-5 mb-5 mt-md-n5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/hospitality/hosp-1.webp" alt="Minimalist hotel lounge area featuring natural lighting">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Hospitality — Goa</span>
-              <h3 class="portfolio-title">Boutique Hotel Wellness Lounge</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 4 (Large right) -->
-        <div class="col-md-7 mb-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/commercial/comm-1.webp" alt="Modern corporate lounge and meeting office layout">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Commercial Interior — Mumbai</span>
-              <h3 class="portfolio-title">The Skyloft Corporate Headquarters</h3>
-            </div>
-          </a>
-        </div>
+  <!-- Hidden Portfolio Source Cards (Read by portfolio.js) -->
+  <div id="portfolioSourceContainer" style="display: none;" aria-hidden="true">
+    
+    <!-- Item 1 (Residential) -->
+    <div class="portfolio-card-source" data-category="residential">
+      <a href="assets/images/residential/res-1.webp" data-lightbox="gallery" data-caption="The Courtyard Residence — Main living area capturing warm wooden panelling and natural light values." class="portfolio-img-wrapper">
+        <img src="assets/images/residential/res-1.webp" alt="The Courtyard Residence">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Residential Interior — Chennai</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">The Courtyard Residence</a></h3>
       </div>
     </div>
-  </section>
 
-  <!-- Client Categories / Service Summary -->
-  <section class="section-padding" aria-label="Services Summary">
-    <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 fade-up-element">
-          <span class="about-subtitle">SERVICE FOCUS</span>
-          <h2 class="display-6 font-serif mt-2">Tailored photography for design and property leaders.</h2>
-        </div>
-        <div class="col-md-6 text-secondary fade-up-element delay-1">
-          <p class="mb-0 font-sans">Whether documenting a residential home for a design portfolio, staging properties for real estate marketing, or styling resort common spaces, our work is specifically tailored to align with each niche's visual guidelines.</p>
-        </div>
-      </div>
-
-      <!-- Service Block List -->
-      <div class="row mt-5">
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">01</span>
-            <h3 class="h4 font-serif">Residential Interiors</h3>
-            <p class="small text-secondary mt-3">High-end room compositions, soft natural light captures, and material textures designed for interior designers and boutique residential builders.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-1">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">02</span>
-            <h3 class="h4 font-serif">Architectural Capture</h3>
-            <p class="small text-secondary mt-3">Contextual elevations, clean angles, structure contours, and exterior landscaping transitions mapping the architect's pure vision.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-2">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">03</span>
-            <h3 class="h4 font-serif">Hospitality & Resorts</h3>
-            <p class="small text-secondary mt-3">Luxurious suites, common spatial flows, dining areas, and lifestyle angles highlighting design details and architectural values.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
+    <!-- Item 2 (Architecture) -->
+    <div class="portfolio-card-source" data-category="architecture">
+      <a href="assets/images/architecture/arch-1.webp" data-lightbox="gallery" data-caption="The Brutalist Villa — Outer concrete structure, demonstrating dramatic light alignments at twilight." class="portfolio-img-wrapper">
+        <img src="assets/images/architecture/arch-1.webp" alt="The Brutalist Villa">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Architecture — Bangalore</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">The Brutalist Villa</a></h3>
       </div>
     </div>
-  </section>
 
-  <!-- Client Testimonial -->
-  <section class="section-padding bg-white" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Client Testimonial">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 text-center fade-up-element">
-          <div class="testimonial-block">
-            <span class="about-subtitle mb-4">TESTIMONIAL</span>
-            <blockquote class="testimonial-quote">"Lumen has a rare ability to understand three-dimensional form. They don't just photograph spaces; they document the emotional intent behind our design selections. Their images have elevated our studio's brand equity."</blockquote>
-            <p class="testimonial-author">Mira Kothari</p>
-            <span class="testimonial-meta">Founder, Kothari Design Atelier</span>
-          </div>
-        </div>
+    <!-- Item 3 (Hospitality) -->
+    <div class="portfolio-card-source" data-category="hospitality">
+      <a href="assets/images/hospitality/hosp-1.webp" data-lightbox="gallery" data-caption="Boutique Hotel Wellness Lounge — Cozy common space detailing custom cane chairs and direct sunlight." class="portfolio-img-wrapper">
+        <img src="assets/images/hospitality/hosp-1.webp" alt="Boutique Hotel Wellness Lounge">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Hospitality — Goa</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Boutique Hotel Wellness Lounge</a></h3>
       </div>
     </div>
-  </section>
 
-  <!-- Final CTA Enquiry Section -->
-  <section class="section-padding" aria-label="Enquiry Invitation">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8 col-lg-10 text-center fade-up-element">
-          <span class="about-subtitle">COLLABORATE WITH US</span>
-          <h2 class="display-6 font-serif mt-2 mb-3">Ready to document your next architectural marvel?</h2>
-          <p class="text-secondary mb-5 max-width-600 mx-auto">Submit your spatial layouts, preferred timeframe, and shoot requirements. We will coordinate a tailored photography treatment for your team.</p>
-          <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
-          <a href="contact.html" class="btn-editorial ms-sm-3 mt-3 mt-sm-0">Get in Touch</a>
-        </div>
+    <!-- Item 4 (Commercial) -->
+    <div class="portfolio-card-source" data-category="commercial">
+      <a href="assets/images/commercial/comm-1.webp" data-lightbox="gallery" data-caption="Skyloft Corporate Headquarters — Shared layout space designed to optimize collaborative work." class="portfolio-img-wrapper">
+        <img src="assets/images/commercial/comm-1.webp" alt="Skyloft Corporate Headquarters">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Commercial Interior — Mumbai</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">The Skyloft Corporate Headquarters</a></h3>
       </div>
+    </div>
+
+    <!-- Item 5 (Real Estate) -->
+    <div class="portfolio-card-source" data-category="real-estate">
+      <a href="assets/images/real-estate/re-1.webp" data-lightbox="gallery" data-caption="The Meadows Villa — Exterior garden pathway Staged for luxury housing catalogs." class="portfolio-img-wrapper">
+        <img src="assets/images/real-estate/re-1.webp" alt="The Meadows Villa">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Real Estate — Hyderabad</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">The Meadows Villa</a></h3>
+      </div>
+    </div>
+
+    <!-- Item 6 (Residential Detail) -->
+    <div class="portfolio-card-source" data-category="residential">
+      <a href="assets/images/residential/res-2.webp" data-lightbox="gallery" data-caption="Minimal Kitchen Study — Clean kitchen design highlighting marble splashback and custom cabinet pulls." class="portfolio-img-wrapper">
+        <img src="assets/images/residential/res-2.webp" alt="Minimal Kitchen Study">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Residential Detail — Pune</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Minimal Kitchen Study</a></h3>
+      </div>
+    </div>
+
+    <!-- Item 7 (Architecture Detail) -->
+    <div class="portfolio-card-source" data-category="architecture">
+      <a href="assets/images/architecture/arch-2.webp" data-lightbox="gallery" data-caption="Shadow Cast Facade — Deep shadows falling on a textured stone facade during late afternoon." class="portfolio-img-wrapper">
+        <img src="assets/images/architecture/arch-2.webp" alt="Shadow Cast Facade">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Architecture Detail — Kochi</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Shadow Cast Facade</a></h3>
+      </div>
+    </div>
+
+    <!-- Item 8 (Hospitality Room) -->
+    <div class="portfolio-card-source" data-category="hospitality">
+      <a href="assets/images/hospitality/hosp-2.webp" data-lightbox="gallery" data-caption="Bespoke Suite Layout — Luxury bedroom detailing warm linens, wooden accents, and framing windows." class="portfolio-img-wrapper">
+        <img src="assets/images/hospitality/hosp-2.webp" alt="Bespoke Suite Layout">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Hospitality Room — Jaipur</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Bespoke Suite Layout</a></h3>
+      </div>
+    </div>
+
+    <!-- Item 9 (Real Estate Room) -->
+    <div class="portfolio-card-source" data-category="real-estate">
+      <a href="assets/images/real-estate/re-2.webp" data-lightbox="gallery" data-caption="Staged Master Bedroom — Clean linen setup and side tables photographed to optimize buyer interest." class="portfolio-img-wrapper">
+        <img src="assets/images/real-estate/re-2.webp" alt="Staged Master Bedroom">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Real Estate — Bangalore</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Staged Master Bedroom</a></h3>
+      </div>
+    </div>
+
+    <!-- Item 10 (Commercial Detail) -->
+    <div class="portfolio-card-source" data-category="commercial">
+      <a href="assets/images/commercial/comm-2.webp" data-lightbox="gallery" data-caption="Modern Workspace Office — Light-filled meeting layout displaying clean desk lines." class="portfolio-img-wrapper">
+        <img src="assets/images/commercial/comm-2.webp" alt="Modern Workspace Office">
+      </a>
+      <div class="portfolio-meta">
+        <span class="portfolio-category">Commercial Interior — Noida</span>
+        <h3 class="portfolio-title"><a href="portfolio-details.html">Modern Workspace Office</a></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Action CTA Enquiry Section -->
+  <section class="section-padding bg-white" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Contact Callout">
+    <div class="container text-center">
+      <span class="about-subtitle">INTERESTED IN COLLABORATION?</span>
+      <h2 class="display-6 font-serif mt-2 mb-3">Let's Capture Your Spaces</h2>
+      <p class="text-secondary max-width-500 mx-auto mb-4 font-sans">Contact our booking desk or submit a questionnaire. We will schedule a spatial walk-through and provide booking availability.</p>
+      <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
+      <a href="contact.html" class="btn-editorial ms-2">Contact Details</a>
     </div>
   </section>
 
@@ -284,7 +266,7 @@
   <footer class="footer-editorial" aria-label="Footer Area">
     <div class="container">
       <div class="row">
-        <!-- Col 1: Studio -->
+        <!-- Col 1 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <h4 class="logo-editorial mb-4" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></h4>
           <p class="footer-studio-desc">Fine architectural and interior photography. Documenting built environments with restraint, lighting depth, and visual clarity.</p>
@@ -294,7 +276,7 @@
           </div>
         </div>
         
-        <!-- Col 2: Services -->
+        <!-- Col 2 -->
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <h4>SERVICES</h4>
           <ul class="footer-links-list">
@@ -307,7 +289,7 @@
           </ul>
         </div>
         
-        <!-- Col 3: Information -->
+        <!-- Col 3 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <h4>INFORMATION</h4>
           <ul class="footer-links-list">
@@ -320,7 +302,7 @@
           </ul>
         </div>
         
-        <!-- Col 4: Newsletter & Contact -->
+        <!-- Col 4 -->
         <div class="col-lg-4 col-md-6">
           <h4>NEWSLETTER</h4>
           <p class="footer-studio-desc">Receive editorial perspectives, architectural case studies, and scheduling slots.</p>
@@ -373,7 +355,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio.js"></script>
   <script src="assets/js/animations.js"></script>
+  
+  <!-- URL Filter Query Handler -->
+  <script>
+    // Read URL parameters to apply initial category selection if present (e.g. ?filter=residential)
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialFilter = urlParams.get('filter');
+      if (initialFilter) {
+        const filterButton = document.querySelector(`.filter-btn[data-filter="${initialFilter}"]`);
+        if (filterButton) {
+          // Trigger click
+          setTimeout(() => {
+            filterButton.click();
+          }, 150);
+        }
+      }
+    });
+  </script>
 </body>
 </html>
 

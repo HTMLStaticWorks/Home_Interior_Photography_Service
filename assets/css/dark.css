@@ -1,0 +1,102 @@
+/* 
+   Home Interior & Architectural Photography Template
+   ThemeForest Premium Commercial Quality
+   Dark Mode Override Stylesheet (dark.css)
+*/
+
+html[data-theme="dark"] {
+  --bg-color: #0C0C0C;
+  --surface-color: #151515;
+  --card-surface: #1C1C1C;
+  --accent-color: #C9A276;
+  --primary-color: #F5F5F4;
+  --text-primary: #F5F5F4;
+  --text-secondary: #A3A3A3;
+  --border-color: #333333;
+  --input-bg: #151515;
+}
+
+/* Adjustments for dark mode readability & contrast */
+html[data-theme="dark"] body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+html[data-theme="dark"] .btn-editorial {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+html[data-theme="dark"] .btn-editorial::before {
+  background-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .btn-editorial:hover {
+  color: #0C0C0C;
+}
+
+html[data-theme="dark"] .btn-editorial-solid {
+  background-color: var(--primary-color);
+  color: #0C0C0C;
+}
+
+html[data-theme="dark"] .btn-editorial-solid::before {
+  background-color: var(--accent-color);
+}
+
+html[data-theme="dark"] .btn-editorial-solid:hover {
+  color: #FFFFFF;
+}
+
+html[data-theme="dark"] .btn-editorial-text {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+html[data-theme="dark"] .btn-editorial-text:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Shadows and subtle transparency adjustments for dark mode */
+html[data-theme="dark"] .nav-dropdown {
+  background-color: var(--surface-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+html[data-theme="dark"] .theme-toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+html[data-theme="dark"] .portfolio-img-wrapper {
+  background-color: #1C1C1C;
+}
+
+html[data-theme="dark"] .comparison-check {
+  color: var(--accent-color);
+}
+
+/* Form input borders */
+html[data-theme="dark"] .form-input-editorial:focus,
+html[data-theme="dark"] .form-select-editorial:focus {
+  border-bottom-color: var(--accent-color);
+}
+
+/* Leaflet maps or placeholder map visual tweaks */
+html[data-theme="dark"] .contact-map-placeholder {
+  background-color: #151515;
+}
+
+html[data-theme="dark"] .map-overlay-editorial {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Highlight borders inside blockquotes */
+html[data-theme="dark"] .testimonial-author {
+  color: var(--accent-color);
+}
+
+/* Box-shadow refinements */
+html[data-theme="dark"] .package-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}

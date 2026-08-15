@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumen — Fine Architectural & Interior Photography Studio</title>
-  <meta name="description" content="Editorial architectural and luxury interior photography for designers, real estate professionals, and premium hospitality brands.">
+  <title>Lumen — Editorial Home Interior & Architectural Photography (Home 2)</title>
+  <meta name="description" content="Editorial split-screen photography showcase and packages structure for architects, luxury designers, and developers.">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Lumen — Fine Architectural & Interior Photography Studio">
-  <meta property="og:description" content="Premium, image-driven photography portfolio capturing residential, architecture, real estate, and hospitality spaces.">
-  <meta property="og:image" content="assets/images/hero/hero-1.webp">
+  <meta property="og:title" content="Lumen — Editorial Home Interior & Architectural Photography (Home 2)">
+  <meta property="og:description" content="A premium split-screen homepage layout highlighting projects stack, service deliverables, packages details, and client testimonials.">
+  <meta property="og:image" content="assets/images/hero/hero-2.webp">
   <meta property="og:type" content="website">
   
   <!-- Stylesheets -->
@@ -18,13 +18,13 @@
   <link rel="stylesheet" href="assets/css/dark.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   
-  <!-- Theme Toggle (executed early to avoid flash) -->
+  <!-- Theme Toggle -->
   <script src="assets/js/theme-toggle.js"></script>
 </head>
 <body>
 
   <!-- Navigation Header -->
-  <header class="header-editorial" id="mainHeader">
+  <header class="header-editorial scrolled" id="mainHeader">
     <div class="header-container">
       <a href="index.html" class="logo-editorial" id="headerLogo" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></a>
       
@@ -104,177 +104,203 @@
     </div>
   </div>
 
-  <!-- Cinematic Hero Section -->
-  <section class="hero-cinematic" aria-label="Hero Showcase">
-    <div class="hero-bg-wrapper">
-      <img src="assets/images/hero/hero-1.webp" alt="Stunning high-end luxury kitchen and dining room interior" class="hero-bg-image slow-pan">
+  <!-- Split Screen Hero Section -->
+  <section class="split-hero-section" aria-label="Split Screen Showcase">
+    <!-- Left Pane: Sticky Info -->
+    <div class="split-left-pane">
+      <div class="my-auto">
+        <span class="about-subtitle">Lumen Studio</span>
+        <h1 class="display-4 font-serif mt-2 mb-4">Capturing structure, material, & natural light.</h1>
+        <p class="text-secondary font-sans mb-4">An editorial photography studio catering to premier interior designers, architectural practices, real estate developers, and boutique hospitality properties.</p>
+        
+        <ul class="list-unstyled mb-5 font-sans" style="font-size: 0.85rem; letter-spacing: 0.05em; line-height: 2;">
+          <li><span style="color: var(--accent-color);">—</span> RESIDENTIAL INTERIORS</li>
+          <li><span style="color: var(--accent-color);">—</span> ARCHITECTURAL DOCUMENTATION</li>
+          <li><span style="color: var(--accent-color);">—</span> HOTEL & HOSPITALITY MARKETING</li>
+          <li><span style="color: var(--accent-color);">—</span> LUXURY REAL ESTATE STAGING</li>
+        </ul>
+        
+        <div>
+          <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
+          <a href="portfolio.html" class="btn-editorial ms-2">View Portfolio</a>
+        </div>
+      </div>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="hero-subtitle">ARCHITECTURAL PHOTOGRAPHY</span>
-      <h1 class="hero-title">Spaces, Captured With Intention.</h1>
-      <p class="hero-description">Honest framing, precise light studies, and high-end styling for designers, developers, and premium hospitality brands.</p>
-      <div class="hero-actions-container">
-        <a href="portfolio.html" class="btn-editorial hero-btn-light">View Portfolio</a>
-        <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
+    
+    <!-- Right Pane: Scrollable Image Stack -->
+    <div class="split-right-pane">
+      <div class="split-image-stack">
+        <div class="split-stack-item">
+          <img src="assets/images/hero/hero-2.webp" alt="Minimalist living room capture with natural lighting shadow cast">
+        </div>
+        <div class="split-stack-item">
+          <img src="assets/images/residential/res-2.webp" alt="Sleek minimalist modern white marble kitchen layout">
+        </div>
+        <div class="split-stack-item">
+          <img src="assets/images/architecture/arch-2.webp" alt="Concrete exterior architecture wall showing light and shadows">
+        </div>
+        <div class="split-stack-item">
+          <img src="assets/images/hospitality/hosp-2.webp" alt="Luxury hotel room interior styling composition">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Studio Introduction / Philosophy -->
-  <section class="section-padding" aria-label="Studio Introduction">
+  <!-- Client Categories & Partnerships -->
+  <section class="section-padding" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Partnerships">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0 fade-up-element">
+          <span class="about-subtitle">COLLABORATORS</span>
+          <h2 class="h3 font-serif mt-1">Trusted By</h2>
+        </div>
+        <div class="col-lg-9 col-md-8 fade-up-element delay-1">
+          <div class="row row-cols-2 row-cols-sm-4 text-center align-items-center font-sans" style="font-size: 0.8rem; letter-spacing: 0.15em; font-weight: 500; color: var(--text-secondary);">
+            <div class="py-3">STUDIO MONOLITH</div>
+            <div class="py-3">DEZEEN DIGEST</div>
+            <div class="py-3">ALCHYMY ATELIER</div>
+            <div class="py-3">THE DESIGN VILLA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparency Packages -->
+  <section class="section-padding bg-white" id="packages-anchor" aria-label="Shoot Packages">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8 fade-up-element">
+          <span class="about-subtitle">COMMISSION STRUCTURES</span>
+          <h2 class="display-6 font-serif mt-2 mb-3">Transparent Packages</h2>
+          <p class="text-secondary max-width-600 mx-auto">Providing precise pricing frameworks mapped to residential sizes, design portfolios, and large commercial architectural commissions.</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Package 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 fade-up-element">
+          <div class="package-card">
+            <span class="package-badge">01 // ESSENTIAL</span>
+            <h3 class="package-title font-serif">Residential Staging</h3>
+            <div class="package-price">â‚¹45,000<span style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);"> / project</span></div>
+            <span class="package-price-sub">Ideal for smaller spaces, apartments, and real estate listings.</span>
+            
+            <ul class="package-features">
+              <li class="package-feature-item">4-Hour Shoot Session</li>
+              <li class="package-feature-item">15 Fully Retouched Images</li>
+              <li class="package-feature-item">Personal & Real Estate Usage</li>
+              <li class="package-feature-item">5 Business Days Delivery</li>
+              <li class="package-feature-item">Standard Color Grading</li>
+            </ul>
+            
+            <a href="shoot-enquiry.html?package=essential" class="btn-editorial w-100 text-center">Select Package</a>
+          </div>
+        </div>
+        
+        <!-- Package 2 -->
+        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-1">
+          <div class="package-card" style="border-color: var(--accent-color);">
+            <span class="package-badge">02 // SIGNATURE</span>
+            <h3 class="package-title font-serif">Designer Portfolio</h3>
+            <div class="package-price">â‚¹75,000<span style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);"> / project</span></div>
+            <span class="package-price-sub">Perfect for interior designers showcasing complete residential portfolio projects.</span>
+            
+            <ul class="package-features">
+              <li class="package-feature-item">8-Hour Full Day Coverage</li>
+              <li class="package-feature-item">30 Fully Retouched Images</li>
+              <li class="package-feature-item">Designer Portfolio & Marketing Rights</li>
+              <li class="package-feature-item">10 Business Days Delivery</li>
+              <li class="package-feature-item">Advanced Image Compositing</li>
+              <li class="package-feature-item">Styling Assistance Coordination</li>
+            </ul>
+            
+            <a href="shoot-enquiry.html?package=signature" class="btn-editorial btn-editorial-solid w-100 text-center">Select Package</a>
+          </div>
+        </div>
+        
+        <!-- Package 3 -->
+        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-2">
+          <div class="package-card">
+            <span class="package-badge">03 // EDITORIAL</span>
+            <h3 class="package-title font-serif">Architectural & Hospitality</h3>
+            <div class="package-price">â‚¹1,20,000<span style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);"> / project</span></div>
+            <span class="package-price-sub">Customized for resorts, large developments, design magazines, and architectural studios.</span>
+            
+            <ul class="package-features">
+              <li class="package-feature-item">Multi-day or Full-day custom timeline</li>
+              <li class="package-feature-item">50 Editorial-Retouched Images</li>
+              <li class="package-feature-item">Commercial Licensing & Media Distribution</li>
+              <li class="package-feature-item">15 Business Days Delivery</li>
+              <li class="package-feature-item">Premium Retouching & Highlight Masking</li>
+              <li class="package-feature-item">Drone & Exterior elevations included</li>
+            </ul>
+            
+            <a href="shoot-enquiry.html?package=editorial" class="btn-editorial w-100 text-center">Select Package</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photography Process (5 Steps) -->
+  <section class="section-padding bg-light" id="process-anchor" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Work Process">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-md-8 fade-up-element">
+          <span class="about-subtitle">THE METHODOLOGY</span>
+          <h2 class="display-6 font-serif mt-2">The Collaboration Process</h2>
+        </div>
+      </div>
+      
+      <div class="process-timeline">
+        <!-- Step 1 -->
+        <div class="process-step-row fade-up-element">
+          <div class="process-number">01</div>
+          <div class="process-title">Enquiry & Consultation</div>
+          <div class="process-desc">Submit your project details via our digital questionnaire. We assess project scales, floor plans, material styling objectives, and natural window alignments.</div>
+        </div>
+        <!-- Step 2 -->
+        <div class="process-step-row fade-up-element">
+          <div class="process-number">02</div>
+          <div class="process-title">Pre-Production & Styling</div>
+          <div class="process-desc">We compile a visual shot list coordinating props, floral arrangements, key accent accessories, lighting directions, and precise shoot schedules.</div>
+        </div>
+        <!-- Step 3 -->
+        <div class="process-step-row fade-up-element">
+          <div class="process-number">03</div>
+          <div class="process-title">The Photography Session</div>
+          <div class="process-desc">A careful, deliberate capture session combining soft ambient light with calculated flash exposures to preserve depth, texture, and realistic view balances.</div>
+        </div>
+        <!-- Step 4 -->
+        <div class="process-step-row fade-up-element">
+          <div class="process-number">04</div>
+          <div class="process-title">Editorial Post-Production</div>
+          <div class="process-desc">Individual exposures are manually blended to correct color casts, align perspectives, clean distractions, and optimize lighting balances.</div>
+        </div>
+        <!-- Step 5 -->
+        <div class="process-step-row fade-up-element">
+          <div class="process-number">05</div>
+          <div class="process-title">High-Res Delivery</div>
+          <div class="process-desc">Images are uploaded to a private client proofing gallery for selection. Final high-resolution print-ready web webps are transferred digitally with standard licensing.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section-padding bg-white" aria-label="Client Feedback">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-9 col-lg-10 text-center fade-up-element">
-          <span class="about-subtitle">STUDIO PHILOSOPHY</span>
-          <h2 class="display-5 font-serif mt-2 mb-4">Capturing structural forms, delicate textures, and the silent interplay of light.</h2>
-          <p class="lead text-secondary font-sans" style="font-size: 1.15rem; font-weight: 300;">We believe that interior photography should feel editorial, not staged. Every project is documented with a deep reverence for the architect's details, the designer's selections, and the natural lighting patterns of the room. We deliver images that build premium brand equity.</p>
-          <div class="spacer-md"></div>
-          <a href="contact.html" class="btn-editorial-text">Learn More About Our Philosophy</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Portfolio Grid -->
-  <section class="section-padding bg-white" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Featured Works">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col-md-8">
-          <span class="about-subtitle">HIGHLIGHTED WORKS</span>
-          <h2 class="display-6 font-serif mt-2 mb-0">Featured Commissions</h2>
-        </div>
-        <div class="col-md-4 text-md-end mt-3 mt-md-0">
-          <a href="portfolio.html" class="btn-editorial-text">Browse All Projects</a>
-        </div>
-      </div>
-
-      <!-- Asymmetric grid -->
-      <div class="row">
-        <!-- Project 1 (Large left) -->
-        <div class="col-md-7 mb-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/residential/res-1.webp" alt="Warm wooden panels and concrete details of a minimalist residence">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Residential Interior — Chennai</span>
-              <h3 class="portfolio-title">The Courtyard Residence</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 2 (Small right) -->
-        <div class="col-md-5 mb-5 mt-md-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/architecture/arch-1.webp" alt="External concrete facade of an architectural villa at sunset">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Architecture — Bangalore</span>
-              <h3 class="portfolio-title">The Brutalist Villa</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 3 (Small left) -->
-        <div class="col-md-5 mb-5 mt-md-n5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/hospitality/hosp-1.webp" alt="Minimalist hotel lounge area featuring natural lighting">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Hospitality — Goa</span>
-              <h3 class="portfolio-title">Boutique Hotel Wellness Lounge</h3>
-            </div>
-          </a>
-        </div>
-
-        <!-- Project 4 (Large right) -->
-        <div class="col-md-7 mb-5 fade-up-element">
-          <a href="portfolio-details.html" class="portfolio-card">
-            <div class="portfolio-img-wrapper reveal-mask">
-              <img src="assets/images/commercial/comm-1.webp" alt="Modern corporate lounge and meeting office layout">
-            </div>
-            <div class="portfolio-meta">
-              <span class="portfolio-category">Commercial Interior — Mumbai</span>
-              <h3 class="portfolio-title">The Skyloft Corporate Headquarters</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Client Categories / Service Summary -->
-  <section class="section-padding" aria-label="Services Summary">
-    <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-6 fade-up-element">
-          <span class="about-subtitle">SERVICE FOCUS</span>
-          <h2 class="display-6 font-serif mt-2">Tailored photography for design and property leaders.</h2>
-        </div>
-        <div class="col-md-6 text-secondary fade-up-element delay-1">
-          <p class="mb-0 font-sans">Whether documenting a residential home for a design portfolio, staging properties for real estate marketing, or styling resort common spaces, our work is specifically tailored to align with each niche's visual guidelines.</p>
-        </div>
-      </div>
-
-      <!-- Service Block List -->
-      <div class="row mt-5">
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">01</span>
-            <h3 class="h4 font-serif">Residential Interiors</h3>
-            <p class="small text-secondary mt-3">High-end room compositions, soft natural light captures, and material textures designed for interior designers and boutique residential builders.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-1">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">02</span>
-            <h3 class="h4 font-serif">Architectural Capture</h3>
-            <p class="small text-secondary mt-3">Contextual elevations, clean angles, structure contours, and exterior landscaping transitions mapping the architect's pure vision.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 fade-up-element delay-2">
-          <div class="p-4 bg-white border border-light height-100" style="height: 100%; border: 1px solid var(--border-color) !important;">
-            <span class="service-number">03</span>
-            <h3 class="h4 font-serif">Hospitality & Resorts</h3>
-            <p class="small text-secondary mt-3">Luxurious suites, common spatial flows, dining areas, and lifestyle angles highlighting design details and architectural values.</p>
-            <a href="services.html" class="btn-editorial-text mt-3">Read deliverables</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Client Testimonial -->
-  <section class="section-padding bg-white" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Client Testimonial">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10 text-center fade-up-element">
+          <span class="about-subtitle">FEEDBACK</span>
+          <h2 class="display-6 font-serif mt-2 mb-5">From Architectural Leaders</h2>
+          
           <div class="testimonial-block">
-            <span class="about-subtitle mb-4">TESTIMONIAL</span>
-            <blockquote class="testimonial-quote">"Lumen has a rare ability to understand three-dimensional form. They don't just photograph spaces; they document the emotional intent behind our design selections. Their images have elevated our studio's brand equity."</blockquote>
-            <p class="testimonial-author">Mira Kothari</p>
-            <span class="testimonial-meta">Founder, Kothari Design Atelier</span>
+            <blockquote class="testimonial-quote">"Lumen has documented seven of our luxury residential projects. Their attention to lines, ambient light balancing, and natural shadow dynamics is outstanding. They have become an essential extension of our design studio."</blockquote>
+            <p class="testimonial-author">Vikram Sen</p>
+            <span class="testimonial-meta">Principal Architect, Sen & Associates</span>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA Enquiry Section -->
-  <section class="section-padding" aria-label="Enquiry Invitation">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8 col-lg-10 text-center fade-up-element">
-          <span class="about-subtitle">COLLABORATE WITH US</span>
-          <h2 class="display-6 font-serif mt-2 mb-3">Ready to document your next architectural marvel?</h2>
-          <p class="text-secondary mb-5 max-width-600 mx-auto">Submit your spatial layouts, preferred timeframe, and shoot requirements. We will coordinate a tailored photography treatment for your team.</p>
-          <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid">Request a Shoot</a>
-          <a href="contact.html" class="btn-editorial ms-sm-3 mt-3 mt-sm-0">Get in Touch</a>
         </div>
       </div>
     </div>
@@ -284,7 +310,7 @@
   <footer class="footer-editorial" aria-label="Footer Area">
     <div class="container">
       <div class="row">
-        <!-- Col 1: Studio -->
+        <!-- Col 1 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <h4 class="logo-editorial mb-4" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></h4>
           <p class="footer-studio-desc">Fine architectural and interior photography. Documenting built environments with restraint, lighting depth, and visual clarity.</p>
@@ -294,7 +320,7 @@
           </div>
         </div>
         
-        <!-- Col 2: Services -->
+        <!-- Col 2 -->
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <h4>SERVICES</h4>
           <ul class="footer-links-list">
@@ -307,7 +333,7 @@
           </ul>
         </div>
         
-        <!-- Col 3: Information -->
+        <!-- Col 3 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <h4>INFORMATION</h4>
           <ul class="footer-links-list">
@@ -320,7 +346,7 @@
           </ul>
         </div>
         
-        <!-- Col 4: Newsletter & Contact -->
+        <!-- Col 4 -->
         <div class="col-lg-4 col-md-6">
           <h4>NEWSLETTER</h4>
           <p class="footer-studio-desc">Receive editorial perspectives, architectural case studies, and scheduling slots.</p>
