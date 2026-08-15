@@ -146,15 +146,15 @@ img {
 }
 
 .btn-editorial-solid {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
+  background-color: var(--primary-color) !important;
+  color: var(--bg-color) !important;
 }
 .btn-editorial-solid::before {
   background-color: var(--accent-color);
 }
 .btn-editorial-solid:hover {
-  color: #FFFFFF;
-  border-color: var(--accent-color);
+  color: #FFFFFF !important;
+  border-color: var(--accent-color) !important;
 }
 
 .btn-editorial-accent {
@@ -171,7 +171,7 @@ img {
 .btn-editorial-text {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--primary-color);
@@ -282,6 +282,11 @@ html[data-theme="dark"] .header-editorial.scrolled {
 @media (max-width: 1024px) {
   .nav-menu {
     display: none;
+  }
+  .header-actions #themeToggler,
+  .header-actions #rtlToggler,
+  .header-actions .btn-editorial {
+    display: none !important;
   }
 }
 
@@ -543,7 +548,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .hero-subtitle {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3em;
   margin-bottom: 25px;
@@ -778,7 +783,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .meta-item-label {
   font-family: var(--font-sans);
   font-size: 0.7rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-secondary);
@@ -891,7 +896,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .service-number {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accent-color);
   margin-bottom: 10px;
   display: block;
@@ -930,7 +935,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .package-badge {
   font-family: var(--font-sans);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--accent-color);
@@ -997,7 +1002,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   font-family: var(--font-sans);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.8rem;
   color: var(--text-primary);
 }
@@ -1011,7 +1016,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 }
 .comparison-check {
   color: var(--accent-color);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* Package Mobile View (Stacked Cards instead of Table) */
@@ -1155,6 +1160,10 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   transition: var(--transition-fast);
   cursor: pointer;
   appearance: none;
+}
+.form-select-editorial option {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
 }
 .form-select-editorial:focus,
 .form-select-editorial:focus-visible {
@@ -1316,7 +1325,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .testimonial-author {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--text-primary);
@@ -1333,7 +1342,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 /* About Philosophy & Approach */
 .about-split {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 80px;
   align-items: center;
 }
@@ -1343,10 +1352,15 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
     gap: 40px;
   }
 }
+.about-split img {
+  max-height: 480px;
+  object-fit: cover;
+  width: 100%;
+}
 .about-subtitle {
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accent-color);
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1388,7 +1402,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 }
 .blog-category-badge {
   color: var(--accent-color);
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 15px;
 }
 .blog-title-large {
@@ -1583,7 +1597,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .footer-contact-item span {
   display: block;
   font-size: 0.7rem;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--primary-color);
   letter-spacing: 0.1em;

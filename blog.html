@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editorial Blog — Architectural & Design Insights | Lumen</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta name="description"
     content="Read editorial perspectives, staging tips, material light studies, and marketing strategies for premium architecture and interior design photography.">
 
@@ -41,7 +42,8 @@
       <nav class="d-none d-lg-block" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-dropdown-wrapper">
-            <a href="index.html" class="nav-link-item" id="homeMenuLink">Home</a>
+            <a href="index.html" class="nav-link-item" id="homeMenuLink">Home <span class="dropdown-chevron"
+                style="font-size: 0.55rem; margin-left: 4px; display: inline-block; vertical-align: middle; transition: transform 0.2s;">&#9660;</span></a>
             <ul class="nav-dropdown" aria-label="Home Submenu">
               <li class="nav-dropdown-item"><a href="index.html">Home 1 (Cinematic)</a></li>
               <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Editorial)</a></li>
@@ -94,11 +96,20 @@
 
   <!-- Mobile Drawer Overlay -->
   <div class="mobile-nav-overlay" id="mobileNavDrawer">
+    <!-- Close Cross Button (Top Right) -->
+    <button id="mobileMenuCloseBtn" aria-label="Close navigation menu"
+      style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-primary); cursor: pointer; padding: 8px; display: flex; align-items: center; justify-content: center; z-index: 1100;">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
     <ul class="mobile-menu">
       <li class="mobile-menu-item">
         <div class="mobile-link">
           <a href="index.html">Home</a>
-          <button class="mobile-dropdown-toggle" aria-expanded="false">â†“</button>
+          <button class="mobile-dropdown-toggle" aria-expanded="false">&darr;</button>
         </div>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item"><a href="index.html">Home 1 (Cinematic)</a></li>
@@ -113,7 +124,30 @@
     </ul>
 
     <div class="mobile-nav-footer">
-      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center">Signup</a>
+      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center mb-3">Signup</a>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn themeTogglerBtn" aria-label="Toggle dark/light theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="theme-toggle-btn rtlTogglerBtn" aria-label="Toggle right-to-left layout"
+          style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; padding: 8px;">RTL</button>
+      </div>
     </div>
   </div>
 
@@ -194,7 +228,7 @@
             </div>
             <div class="blog-card-content">
               <div class="blog-meta">
-                <span class="blog-category-badge">BEHIND THE SCENES</span> — JULY 28, 2026
+                <span class="blog-category-badge">SCENES</span> — JULY 28, 2026
               </div>
               <h3 class="blog-title-medium"><a href="blog-details.html">Coordination & Props: The Staging Playbook for
                   Interior Designers</a></h3>
@@ -219,6 +253,45 @@
                   Booking Conversions</a></h3>
               <p class="blog-excerpt">Analyzing typical conversion metrics for boutique hotel suites and property
                 listings when images employ premium framing details.</p>
+              <a href="blog-details.html" class="btn-editorial-text">Read Article</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 3 (styling) -->
+        <div class="col-md-6 mb-4 fade-up-element" data-category-item="styling">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/residential/res-2.webp" alt="Minimal kitchen cabinet close-up details">
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span class="blog-category-badge">STYLING TIPS</span> — AUGUST 10, 2026
+              </div>
+              <h3 class="blog-title-medium"><a href="blog-details.html">The Art of Negative Space in High-End Interior
+                  premium
+                  Staging</a></h3>
+              <p class="blog-excerpt">How removing unnecessary props, identifying focal points, and managing white space
+                creates a premium, commercial portfolio spread.</p>
+              <a href="blog-details.html" class="btn-editorial-text">Read Article</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post 4 (styling) -->
+        <div class="col-md-6 mb-4 fade-up-element delay-1" data-category-item="styling">
+          <div class="blog-card">
+            <div class="blog-card-img-wrapper">
+              <img src="assets/images/residential/res-1.webp" alt="Staged luxury living room details">
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span class="blog-category-badge">STYLING TIPS</span> — AUGUST 02, 2026
+              </div>
+              <h3 class="blog-title-medium"><a href="blog-details.html">Chasing Natural Light: Timing Your Residential
+                  Photoshoots</a></h3>
+              <p class="blog-excerpt">Understanding solar orientation, morning golden hour shifts, and window exposure
+                timings to optimize soft light spreads in living areas.</p>
               <a href="blog-details.html" class="btn-editorial-text">Read Article</a>
             </div>
           </div>
@@ -305,7 +378,7 @@
             <input type="email" class="newsletter-input-footer" placeholder="YOUR EMAIL ADDRESS"
               aria-label="Email for subscribing to newsletter" required>
             <button type="submit" class="newsletter-submit-footer"
-              aria-label="Submit newsletter subscription">â†’</button>
+              aria-label="Submit newsletter subscription">&rarr;</button>
           </form>
 
           <div class="footer-socials">

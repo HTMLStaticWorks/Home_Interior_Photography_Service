@@ -46,6 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.style.overflow = '';
       }
     });
+
+    // Close menu when clicking the dedicated close button
+    const closeBtn = document.getElementById('mobileMenuCloseBtn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        hamburgerBtn.classList.remove('active');
+        mobileNavOverlay.classList.remove('active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    }
   }
 
   // --- Mobile Dropdowns (Submenus) ---

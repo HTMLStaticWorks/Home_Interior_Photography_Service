@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact & Studio Info — Lumen Architectural & Interior Photography</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <meta name="description" content="Get in touch with Lumen Studio. View location details, travel coverage maps, and submit standard shoot enquiries.">
   
   <!-- Open Graph -->
@@ -32,7 +33,7 @@
       <nav class="d-none d-lg-block" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-dropdown-wrapper">
-            <a href="index.html" class="nav-link-item" id="homeMenuLink">Home</a>
+            <a href="index.html" class="nav-link-item" id="homeMenuLink">Home <span class="dropdown-chevron" style="font-size: 0.55rem; margin-left: 4px; display: inline-block; vertical-align: middle; transition: transform 0.2s;">&#9660;</span></a>
             <ul class="nav-dropdown" aria-label="Home Submenu">
               <li class="nav-dropdown-item"><a href="index.html">Home 1 (Cinematic)</a></li>
               <li class="nav-dropdown-item"><a href="home-2.html">Home 2 (Editorial)</a></li>
@@ -81,11 +82,18 @@
 
     <!-- Mobile Drawer Overlay -->
   <div class="mobile-nav-overlay" id="mobileNavDrawer">
+    <!-- Close Cross Button (Top Right) -->
+    <button id="mobileMenuCloseBtn" aria-label="Close navigation menu" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-primary); cursor: pointer; padding: 8px; display: flex; align-items: center; justify-content: center; z-index: 1100;">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
     <ul class="mobile-menu">
       <li class="mobile-menu-item">
         <div class="mobile-link">
           <a href="index.html">Home</a>
-          <button class="mobile-dropdown-toggle" aria-expanded="false">â†“</button>
+          <button class="mobile-dropdown-toggle" aria-expanded="false">&darr;</button>
         </div>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item"><a href="index.html">Home 1 (Cinematic)</a></li>
@@ -99,8 +107,28 @@
       <li class="mobile-menu-item"><a href="contact.html" class="mobile-link">Contact</a></li>
     </ul>
     
-    <div class="mobile-nav-footer">
-      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center">Signup</a>
+        <div class="mobile-nav-footer">
+      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center mb-3">Signup</a>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn themeTogglerBtn" aria-label="Toggle dark/light theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="theme-toggle-btn rtlTogglerBtn" aria-label="Toggle right-to-left layout" style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; padding: 8px;">RTL</button>
+      </div>
     </div>
   </div>
 
@@ -132,6 +160,16 @@
             <div class="col-sm-6 mb-3">
               <strong>GENERAL CONTACT</strong>
               <div class="small">info@Lumenphotography.com<br>+91 44 4920 1829</div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-2">
+            <strong style="font-size: 0.88rem; letter-spacing: 0.05em; text-transform: uppercase;">Follow Our Work</strong>
+            <div class="footer-socials mt-2" style="margin-top: 10px;">
+              <a href="#" aria-label="Instagram Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              <a href="#" aria-label="LinkedIn Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+              <a href="#" aria-label="Pinterest Board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.23 2.63 7.85 6.37 9.35-.1-.79-.19-2 .04-2.86.2-.84 1.35-5.74 1.35-5.74s-.35-.69-.35-1.72c0-1.61.93-2.81 2.09-2.81 1 0 1.48.74 1.48 1.63 0 1-.63 2.5-1 3.89-.27 1.15.58 2.08 1.71 2.08 2.06 0 3.64-2.17 3.64-5.3 0-2.77-1.99-4.71-4.83-4.71-3.3 0-5.23 2.47-5.23 5.03 0 1 .38 2.07.86 2.65.1.11.11.21.08.32l-.37 1.47c-.06.24-.19.33-.44.22-1.65-.77-2.68-3.18-2.68-5.11 0-4.16 3.03-7.98 8.71-7.98 4.58 0 8.14 3.26 8.14 7.62 0 4.55-2.87 8.21-6.85 8.21-1.34 0-2.6-0.7-3.03-1.52l-.83 3.16c-.3 1.16-1.11 2.6-1.66 3.49C10.23 21.82 11.11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path></svg></a>
+              <a href="#" aria-label="Behance Showcase"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M9 13H5v4h4a2 2 0 0 0 0-4zm-4-4h3.5a1.5 1.5 0 0 0 0-3H5v3zm13.5-1.5H15v1h3.5v-1zM22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zm-11 .5c0-1.33-.89-2-2.5-2H4v11h5c1.61 0 2-.67 2-2 0-.89-.44-1.5-1.25-1.75C10.56 15.5 11 14.5 11 12.5zm9 1c0-2-1-3.5-3.5-3.5s-3.5 1.5-3.5 3.5 1 3.5 3.5 3.5c2 0 3.22-1.07 3.44-2.5h-1.84c-.16.48-.68.86-1.6.86-1 0-1.44-.54-1.5-1.36H20c0-.5.06-1.14 0-1.14z"></path></svg></a>
             </div>
           </div>
         </div>
@@ -179,17 +217,19 @@
           </div>
         </div>
         
-        <!-- Map UI representation -->
+        <!-- Interactive Map -->
         <div class="col-lg-8 order-1 order-lg-2 mb-4 mb-lg-0 fade-up-element delay-1">
-          <div class="contact-map-placeholder">
-            <div class="map-overlay-editorial">
-              <div class="map-marker-pin">📍</div>
-              <h3 class="font-serif text-dark h4 mb-2">Primary Studio — Chennai</h3>
-              <p class="small text-secondary max-width-320">Wallace Garden Road, Nungambakkam<br>Chennai, Tamil Nadu, 600006</p>
-              <div class="mt-4 pulse-glow" style="border-radius: 5px; overflow: hidden;">
-                <a href="shoot-enquiry.html" class="btn-editorial btn-editorial-solid" style="font-size: 0.75rem;">Coordinate Travel Booking</a>
-              </div>
-            </div>
+          <div class="contact-map-placeholder" style="position: relative;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2847926189916!2d80.2476535759714!3d13.061794512461536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526615b31df68f%3A0xe543c7b39920199e!2sWallace%20Garden%203rd%20St%2C%20Nungambakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600006!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="google-map-iframe">
+            </iframe>
           </div>
         </div>
       </div>
@@ -284,7 +324,7 @@
           <p class="footer-studio-desc">Receive editorial perspectives, architectural case studies, and scheduling slots.</p>
           <form class="newsletter-form-footer" aria-label="Footer Newsletter Signup">
             <input type="email" class="newsletter-input-footer" placeholder="YOUR EMAIL ADDRESS" aria-label="Email for subscribing to newsletter" required>
-            <button type="submit" class="newsletter-submit-footer" aria-label="Submit newsletter subscription">â†’</button>
+            <button type="submit" class="newsletter-submit-footer" aria-label="Submit newsletter subscription">&rarr;</button>
           </form>
           
                     <div class="footer-socials">

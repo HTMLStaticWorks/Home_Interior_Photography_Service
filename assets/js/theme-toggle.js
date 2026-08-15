@@ -25,23 +25,23 @@
 
 // Bind toggle button click listeners once DOM is ready
 document.addEventListener('DOMContentLoaded', function () {
-  const themeToggler = document.getElementById('themeToggler');
-  const rtlToggler = document.getElementById('rtlToggler');
+  const themeTogglerBtns = document.querySelectorAll('#themeToggler, .themeTogglerBtn');
+  const rtlTogglerBtns = document.querySelectorAll('#rtlToggler, .rtlTogglerBtn');
   
   // Theme Toggle listener
-  if (themeToggler) {
-    themeToggler.addEventListener('click', function () {
+  themeTogglerBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme-mode', newTheme);
       this.setAttribute('aria-label', `Switch to ${newTheme === 'light' ? 'dark' : 'light'} mode`);
     });
-  }
+  });
 
   // RTL Toggle listener
-  if (rtlToggler) {
-    rtlToggler.addEventListener('click', function () {
+  rtlTogglerBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
       const currentDir = document.documentElement.getAttribute('dir');
       const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
       if (newDir === 'rtl') {
@@ -52,5 +52,5 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('rtl-mode', 'false');
       }
     });
-  }
+  });
 });

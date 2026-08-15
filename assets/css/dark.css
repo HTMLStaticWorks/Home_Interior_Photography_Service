@@ -36,8 +36,8 @@ html[data-theme="dark"] .btn-editorial:hover {
 }
 
 html[data-theme="dark"] .btn-editorial-solid {
-  background-color: var(--primary-color);
-  color: #0C0C0C;
+  background-color: var(--primary-color) !important;
+  color: #0C0C0C !important;
 }
 
 html[data-theme="dark"] .btn-editorial-solid::before {
@@ -45,7 +45,7 @@ html[data-theme="dark"] .btn-editorial-solid::before {
 }
 
 html[data-theme="dark"] .btn-editorial-solid:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 
 html[data-theme="dark"] .btn-editorial-text {
@@ -81,6 +81,10 @@ html[data-theme="dark"] .form-input-editorial:focus,
 html[data-theme="dark"] .form-select-editorial:focus {
   border-bottom-color: var(--accent-color);
 }
+html[data-theme="dark"] .form-select-editorial option {
+  background-color: var(--surface-color) !important;
+  color: var(--text-primary) !important;
+}
 
 /* Leaflet maps or placeholder map visual tweaks */
 html[data-theme="dark"] .contact-map-placeholder {
@@ -99,4 +103,22 @@ html[data-theme="dark"] .testimonial-author {
 /* Box-shadow refinements */
 html[data-theme="dark"] .package-card:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Dark Mode background overrides for Bootstrap compatibility */
+html[data-theme="dark"] .bg-white {
+  background-color: var(--surface-color) !important;
+}
+html[data-theme="dark"] .bg-light {
+  background-color: var(--bg-color) !important;
+}
+html[data-theme="dark"] .border-light {
+  border-color: var(--border-color) !important;
+}
+html[data-theme="dark"] .text-dark {
+  color: var(--text-primary) !important;
+}
+
+html[data-theme="dark"] .google-map-iframe {
+  filter: invert(90%) hue-rotate(180deg) grayscale(20%) contrast(90%);
 }
