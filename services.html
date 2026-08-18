@@ -1,35 +1,44 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services & Packages — Lumen Architectural & Interior Photography</title>
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <meta name="description" content="Read our professional interior, residential, real estate, and hotel photography services, pricing tiers, and licensing comparison table.">
-  
+  <meta name="description"
+    content="Read our professional interior, residential, real estate, and hotel photography services, pricing tiers, and licensing comparison table.">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Services & Packages — Lumen Architectural & Interior Photography">
-  <meta property="og:description" content="Explore transparent shoot packages, editorial color retouching options, and image licensing rights.">
+  <meta property="og:description"
+    content="Explore transparent shoot packages, editorial color retouching options, and image licensing rights.">
   <meta property="og:image" content="assets/images/services/services-banner.webp">
   <meta property="og:type" content="website">
-  
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark.css">
   <link rel="stylesheet" href="assets/css/animations.css">
-  
+
   <!-- Theme Toggle -->
   <script src="assets/js/theme-toggle.js"></script>
 </head>
+
 <body>
 
   <!-- Navigation Header -->
   <header class="header-editorial scrolled" id="mainHeader">
     <div class="header-container">
-      <a href="index.html" class="logo-editorial" id="headerLogo" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></a>
-      
-            <!-- Desktop Navigation Menu -->
+      <a href="index.html" class="logo-editorial" id="headerLogo"
+        style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);">
+          <path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path>
+        </svg><span>LUMEN</span></a>
+
+      <!-- Desktop Navigation Menu -->
       <nav class="d-none d-lg-block" aria-label="Main Navigation">
         <ul class="nav-menu">
           <li class="nav-dropdown-wrapper">
@@ -51,10 +60,12 @@
       <div class="header-actions">
         <!-- Theme Toggle Button -->
         <button class="theme-toggle-btn" id="themeToggler" aria-label="Toggle dark/light theme">
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -65,11 +76,13 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-                </button>
-        <button class="theme-toggle-btn" id="rtlToggler" aria-label="Toggle right-to-left layout" style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; margin-left: 10px; margin-right: 10px;">RTL</button>
-        
-        <a href="signup.html" class="btn-editorial btn-editorial-solid d-none d-sm-inline-flex" style="padding: 10px 20px; font-size: 0.75rem;">Signup</a>
-        
+        </button>
+        <button class="theme-toggle-btn" id="rtlToggler" aria-label="Toggle right-to-left layout"
+          style="font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; margin-left: 10px; margin-right: 10px;">RTL</button>
+
+        <a href="signup.html" class="btn-editorial btn-editorial-solid d-none d-sm-inline-flex"
+          style="padding: 10px 20px; font-size: 0.75rem;">Signup</a>
+
         <!-- Mobile Hamburger Button -->
         <button class="hamburger-btn" id="mobileMenuToggler" aria-label="Open navigation menu" aria-expanded="false">
           <span class="hamburger-line"></span>
@@ -78,15 +91,22 @@
         </button>
       </div>
     </div>
-  </header>
-
-    <!-- Mobile Drawer Overlay -->
+  </header> <!-- Mobile Drawer Overlay -->
   <div class="mobile-nav-overlay" id="mobileNavDrawer">
+    <!-- Close Cross Button (Top Right) -->
+    <button id="mobileMenuCloseBtn" aria-label="Close navigation menu"
+      style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--text-primary); cursor: pointer; padding: 8px; display: flex; align-items: center; justify-content: center; z-index: 1100;">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
     <ul class="mobile-menu">
       <li class="mobile-menu-item">
         <div class="mobile-link">
           <a href="index.html">Home</a>
-          <button class="mobile-dropdown-toggle" aria-expanded="false">â†“</button>
+          <button class="mobile-dropdown-toggle" aria-expanded="false">&darr;</button>
         </div>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item"><a href="index.html">Home 1 (Cinematic)</a></li>
@@ -99,9 +119,32 @@
       <li class="mobile-menu-item"><a href="blog.html" class="mobile-link">Blog</a></li>
       <li class="mobile-menu-item"><a href="contact.html" class="mobile-link">Contact</a></li>
     </ul>
-    
+
     <div class="mobile-nav-footer">
-      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center">Signup</a>
+      <a href="signup.html" class="btn-editorial btn-editorial-solid w-100 text-center mb-3">Signup</a>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <!-- Theme Toggle Switch -->
+        <button class="theme-toggle-btn themeTogglerBtn" aria-label="Toggle dark/light theme">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="theme-toggle-btn rtlTogglerBtn" aria-label="Toggle right-to-left layout"
+          style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; padding: 8px;">RTL</button>
+      </div>
     </div>
   </div>
 
@@ -110,7 +153,34 @@
     <div class="container text-center">
       <span class="about-subtitle">visual precision</span>
       <h1 class="display-5 font-serif mt-2 mb-3">Service Focus & Pricing</h1>
-      <p class="text-secondary max-width-600 mx-auto font-sans">Documenting architectural structure and interior details with premium post-production color balance and licensed distribution rights.</p>
+      <p class="text-secondary max-width-600 mx-auto font-sans">Documenting architectural structure and interior details
+        with premium post-production color balance and licensed distribution rights.</p>
+
+      <!-- Showcase Image Grid -->
+      <div class="row g-4 mt-5 justify-content-center">
+        <div class="col-md-4 col-sm-6 fade-up-element">
+          <div class="service-image-card">
+            <img src="assets/images/services/service-architecture.jpg" alt="Minimalist architectural concrete structure"
+              class="img-fluid service-showcase-img">
+            <div class="service-image-caption">STRUCTURE</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up-element delay-1">
+          <div class="service-image-card">
+            <img src="assets/images/services/service-interior.jpg" alt="Modern minimalist interior space"
+              class="img-fluid service-showcase-img">
+            <div class="service-image-caption">INTERIOR COMPOSITION</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 fade-up-element delay-2">
+          <div class="service-image-card">
+            <img src="assets/images/services/service-detail.jpg" alt="Detail of material textures and raw elements"
+              class="img-fluid service-showcase-img">
+            <div class="service-image-caption">MATERIAL DETAIL STUDY</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -119,7 +189,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          
+
           <!-- Block 1: Residential -->
           <div class="service-block fade-up-element">
             <div class="row">
@@ -129,7 +199,9 @@
                 <span class="service-for-badge">Interior Designers & Stylists</span>
               </div>
               <div class="col-lg-8 col-md-7 text-secondary">
-                <p>Specifically designed to capture complete residential designs, staging selections, furniture arrangements, and texture groupings. We frame details that show how fabrics, wood surfaces, and light transitions function together in three dimensions.</p>
+                <p>Specifically designed to capture complete residential designs, staging selections, furniture
+                  arrangements, and texture groupings. We frame details that show how fabrics, wood surfaces, and light
+                  transitions function together in three dimensions.</p>
                 <ul class="row mt-4 list-unstyled font-sans" style="font-size: 0.85rem; line-height: 2;">
                   <div class="col-sm-6">
                     <li><span style="color: var(--accent-color);">—</span> Room focal exposures</li>
@@ -156,7 +228,9 @@
                 <span class="service-for-badge">Architects & Property Developers</span>
               </div>
               <div class="col-lg-8 col-md-7 text-secondary">
-                <p>Documenting structural elements, geometric patterns, building facades, and environmental interactions. Using high-end tilt-shift lenses, we guarantee that vertical and horizontal planes remain perfectly straight, capturing real elevation views.</p>
+                <p>Documenting structural elements, geometric patterns, building facades, and environmental
+                  interactions. Using high-end tilt-shift lenses, we guarantee that vertical and horizontal planes
+                  remain perfectly straight, capturing real elevation views.</p>
                 <ul class="row mt-4 list-unstyled font-sans" style="font-size: 0.85rem; line-height: 2;">
                   <div class="col-sm-6">
                     <li><span style="color: var(--accent-color);">—</span> Building elevations</li>
@@ -183,7 +257,8 @@
                 <span class="service-for-badge">Hotels, Resorts & RestLumennt Groups</span>
               </div>
               <div class="col-lg-8 col-md-7 text-secondary">
-                <p>Commercial-grade imagery capturing common lounges, luxury suite layouts, culinary spaces, and pool elevations. Our work aligns with global brand guidelines to enhance reservation conversion rates.</p>
+                <p>Commercial-grade imagery capturing common lounges, luxury suite layouts, culinary spaces, and pool
+                  elevations. Our work aligns with global brand guidelines to enhance reservation conversion rates.</p>
                 <ul class="row mt-4 list-unstyled font-sans" style="font-size: 0.85rem; line-height: 2;">
                   <div class="col-sm-6">
                     <li><span style="color: var(--accent-color);">—</span> Suite layout details</li>
@@ -207,7 +282,8 @@
   </section>
 
   <!-- Transparent Packages Cards -->
-  <section class="section-padding bg-white" id="packages-anchor" style="border-top: 1px solid var(--border-color);" aria-label="Transparent Pricing Packages">
+  <section class="section-padding bg-white" id="packages-anchor" style="border-top: 1px solid var(--border-color);"
+    aria-label="Transparent Pricing Packages">
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-lg-8 fade-up-element">
@@ -215,7 +291,7 @@
           <h2 class="display-6 font-serif mt-2">Transparent Packages</h2>
         </div>
       </div>
-      
+
       <div class="row justify-content-center">
         <!-- Essential -->
         <div class="col-xl-4 col-lg-6 col-md-6 mb-4 fade-up-element">
@@ -224,18 +300,18 @@
             <h3 class="package-title font-serif">Residential Staging</h3>
             <div class="package-price">&#8377;45,000</div>
             <span class="package-price-sub">Templates/Sample Pricing Only</span>
-            
+
             <ul class="package-features">
               <li class="package-feature-item">4-Hour Shoot Session</li>
               <li class="package-feature-item">15 Fully Retouched Images</li>
               <li class="package-feature-item">Personal & Real Estate Usage</li>
               <li class="package-feature-item">5 Business Days Delivery</li>
             </ul>
-            
+
             <a href="shoot-enquiry.html?package=essential" class="btn-editorial w-100 text-center">Select Package</a>
           </div>
         </div>
-        
+
         <!-- Signature -->
         <div class="col-xl-4 col-lg-6 col-md-6 mb-4 fade-up-element delay-1">
           <div class="package-card" style="border-color: var(--accent-color);">
@@ -243,18 +319,19 @@
             <h3 class="package-title font-serif">Designer Portfolio</h3>
             <div class="package-price">&#8377;75,000</div>
             <span class="package-price-sub">Templates/Sample Pricing Only</span>
-            
+
             <ul class="package-features">
               <li class="package-feature-item">8-Hour Full Day Coverage</li>
               <li class="package-feature-item">30 Fully Retouched Images</li>
               <li class="package-feature-item">Designer Portfolio & Marketing Rights</li>
               <li class="package-feature-item">10 Business Days Delivery</li>
             </ul>
-            
-            <a href="shoot-enquiry.html?package=signature" class="btn-editorial btn-editorial-solid w-100 text-center">Select Package</a>
+
+            <a href="shoot-enquiry.html?package=signature"
+              class="btn-editorial btn-editorial-solid w-100 text-center">Select Package</a>
           </div>
         </div>
-        
+
         <!-- Editorial -->
         <div class="col-xl-4 col-lg-6 col-md-6 mb-4 fade-up-element delay-2">
           <div class="package-card">
@@ -262,14 +339,14 @@
             <h3 class="package-title font-serif">Architectural & Hospitality</h3>
             <div class="package-price">&#8377;1,20,000</div>
             <span class="package-price-sub">Templates/Sample Pricing Only</span>
-            
+
             <ul class="package-features">
               <li class="package-feature-item">Full-day or Multi-day custom timeline</li>
               <li class="package-feature-item">50 Editorial-Retouched Images</li>
               <li class="package-feature-item">Commercial Licensing & Media Rights</li>
               <li class="package-feature-item">15 Business Days Delivery</li>
             </ul>
-            
+
             <a href="shoot-enquiry.html?package=editorial" class="btn-editorial w-100 text-center">Select Package</a>
           </div>
         </div>
@@ -279,7 +356,7 @@
       <div class="row mt-5 pt-4">
         <div class="col-12 fade-up-element">
           <h3 class="font-serif text-center mb-4">Complete Feature Comparison</h3>
-          
+
           <!-- Desktop Table Layout -->
           <div class="comparison-table-wrapper">
             <table class="comparison-table">
@@ -422,30 +499,40 @@
   </section>
 
   <!-- Commercial & Licensing General Guidelines Section -->
-  <section class="section-padding bg-light" style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);" aria-label="Licensing Information">
+  <section class="section-padding bg-light"
+    style="border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);"
+    aria-label="Licensing Information">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-9 col-lg-10 fade-up-element">
           <span class="about-subtitle">USAGE TERMS</span>
           <h2 class="font-serif mb-4">Commercial Usage & Image Licensing</h2>
-          <p class="text-secondary font-sans mb-4">All photography images delivered are subject to standard copyright guidelines. A clear understanding of rights ensures that both the creative teams and the client groups are protected legally.</p>
-          
+          <p class="text-secondary font-sans mb-4">All photography images delivered are subject to standard copyright
+            guidelines. A clear understanding of rights ensures that both the creative teams and the client groups are
+            protected legally.</p>
+
           <div class="row mt-4">
             <div class="col-md-6 mb-3">
               <h3 class="h5 font-serif">Personal & Portfolio Use</h3>
-              <p class="small text-secondary">Images may be used by hiring designers, architects, or staging professionals to showcase their design capability on portfolios, personal websites, and social media feeds.</p>
+              <p class="small text-secondary">Images may be used by hiring designers, architects, or staging
+                professionals to showcase their design capability on portfolios, personal websites, and social media
+                feeds.</p>
             </div>
             <div class="col-md-6 mb-3">
               <h3 class="h5 font-serif">Marketing & Commercial Use</h3>
-              <p class="small text-secondary">For real estate developers, hotels, or rental properties, images are licensed for marketing brochures, advertisements, booking websites, and print campaigns.</p>
+              <p class="small text-secondary">For real estate developers, hotels, or rental properties, images are
+                licensed for marketing brochures, advertisements, booking websites, and print campaigns.</p>
             </div>
             <div class="col-md-6 mb-3">
               <h3 class="h5 font-serif">Third-Party Licensing</h3>
-              <p class="small text-secondary">Should subcontractors (furniture makers, lighting companies, flooring providers) wish to use the images, they are required to purchase secondary licensing rights from Lumen.</p>
+              <p class="small text-secondary">Should subcontractors (furniture makers, lighting companies, flooring
+                providers) wish to use the images, they are required to purchase secondary licensing rights from Lumen.
+              </p>
             </div>
             <div class="col-md-6 mb-3">
               <h3 class="h5 font-serif">Editorial PR & Publication</h3>
-              <p class="small text-secondary">Image licenses accommodate editorial submissions to magazines like *Architectural Digest*, *Cereal*, or *Dezeen* with standard credit guidelines.</p>
+              <p class="small text-secondary">Image licenses accommodate editorial submissions to magazines like
+                *Architectural Digest*, *Cereal*, or *Dezeen* with standard credit guidelines.</p>
             </div>
           </div>
         </div>
@@ -459,14 +546,19 @@
       <div class="row">
         <!-- Col 1 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <h4 class="logo-editorial mb-4" style="display: inline-flex; align-items: center; text-decoration: none;"><svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg><span>LUMEN</span></h4>
-          <p class="footer-studio-desc">Fine architectural and interior photography. Documenting built environments with restraint, lighting depth, and visual clarity.</p>
+          <h4 class="logo-editorial mb-4" style="display: inline-flex; align-items: center; text-decoration: none;"><svg
+              class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);">
+              <path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path>
+            </svg><span>LUMEN</span></h4>
+          <p class="footer-studio-desc">Fine architectural and interior photography. Documenting built environments with
+            restraint, lighting depth, and visual clarity.</p>
           <div class="footer-contact-item mt-4">
             <span>Primary Studio Location</span>
             No. 12, Wallace Garden, Chennai, TN — 600006
           </div>
         </div>
-        
+
         <!-- Col 2 -->
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <h4>SERVICES</h4>
@@ -479,7 +571,7 @@
             <li><a href="services.html">Commercial</a></li>
           </ul>
         </div>
-        
+
         <!-- Col 3 -->
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <h4>INFORMATION</h4>
@@ -492,25 +584,49 @@
             <li><a href="blog.html">Editorial Blog</a></li>
           </ul>
         </div>
-        
+
         <!-- Col 4 -->
         <div class="col-lg-4 col-md-6">
           <h4>NEWSLETTER</h4>
-          <p class="footer-studio-desc">Receive editorial perspectives, architectural case studies, and scheduling slots.</p>
+          <p class="footer-studio-desc">Receive editorial perspectives, architectural case studies, and scheduling
+            slots.</p>
           <form class="newsletter-form-footer" aria-label="Footer Newsletter Signup">
-            <input type="email" class="newsletter-input-footer" placeholder="YOUR EMAIL ADDRESS" aria-label="Email for subscribing to newsletter" required>
-            <button type="submit" class="newsletter-submit-footer" aria-label="Submit newsletter subscription">â†’</button>
+            <input type="email" class="newsletter-input-footer" placeholder="YOUR EMAIL ADDRESS"
+              aria-label="Email for subscribing to newsletter" required>
+            <button type="submit" class="btn-editorial btn-editorial-solid newsletter-submit-btn"
+              aria-label="Submit newsletter subscription">SUBSCRIBE</button>
           </form>
-          
-                    <div class="footer-socials">
-            <a href="#" aria-label="Instagram Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-            <a href="#" aria-label="LinkedIn Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-            <a href="#" aria-label="Pinterest Board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.23 2.63 7.85 6.37 9.35-.1-.79-.19-2 .04-2.86.2-.84 1.35-5.74 1.35-5.74s-.35-.69-.35-1.72c0-1.61.93-2.81 2.09-2.81 1 0 1.48.74 1.48 1.63 0 1-.63 2.5-1 3.89-.27 1.15.58 2.08 1.71 2.08 2.06 0 3.64-2.17 3.64-5.3 0-2.77-1.99-4.71-4.83-4.71-3.3 0-5.23 2.47-5.23 5.03 0 1 .38 2.07.86 2.65.1.11.11.21.08.32l-.37 1.47c-.06.24-.19.33-.44.22-1.65-.77-2.68-3.18-2.68-5.11 0-4.16 3.03-7.98 8.71-7.98 4.58 0 8.14 3.26 8.14 7.62 0 4.55-2.87 8.21-6.85 8.21-1.34 0-2.6-0.7-3.03-1.52l-.83 3.16c-.3 1.16-1.11 2.6-1.66 3.49C10.23 21.82 11.11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"></path></svg></a>
-            <a href="#" aria-label="Behance Showcase"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 16px; height: 16px;"><path d="M9 13H5v4h4a2 2 0 0 0 0-4zm-4-4h3.5a1.5 1.5 0 0 0 0-3H5v3zm13.5-1.5H15v1h3.5v-1zM22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zm-11 .5c0-1.33-.89-2-2.5-2H4v11h5c1.61 0 2-.67 2-2 0-.89-.44-1.5-1.25-1.75C10.56 15.5 11 14.5 11 12.5zm9 1c0-2-1-3.5-3.5-3.5s-3.5 1.5-3.5 3.5 1 3.5 3.5 3.5c2 0 3.22-1.07 3.44-2.5h-1.84c-.16.48-.68.86-1.6.86-1 0-1.44-.54-1.5-1.36H20c0-.5.06-1.14 0-1.14z"></path></svg></a>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" style="width: 16px; height: 16px;">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg></a>
+            <a href="#" aria-label="LinkedIn Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" style="width: 16px; height: 16px;">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg></a>
+            <a href="#" aria-label="Pinterest Board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" style="width: 16px; height: 16px;">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.23 2.63 7.85 6.37 9.35-.1-.79-.19-2 .04-2.86.2-.84 1.35-5.74 1.35-5.74s-.35-.69-.35-1.72c0-1.61.93-2.81 2.09-2.81 1 0 1.48.74 1.48 1.63 0 1-.63 2.5-1 3.89-.27 1.15.58 2.08 1.71 2.08 2.06 0 3.64-2.17 3.64-5.3 0-2.77-1.99-4.71-4.83-4.71-3.3 0-5.23 2.47-5.23 5.03 0 1 .38 2.07.86 2.65.1.11.11.21.08.32l-.37 1.47c-.06.24-.19.33-.44.22-1.65-.77-2.68-3.18-2.68-5.11 0-4.16 3.03-7.98 8.71-7.98 4.58 0 8.14 3.26 8.14 7.62 0 4.55-2.87 8.21-6.85 8.21-1.34 0-2.6-0.7-3.03-1.52l-.83 3.16c-.3 1.16-1.11 2.6-1.66 3.49C10.23 21.82 11.11 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z">
+                </path>
+              </svg></a>
+            <a href="#" aria-label="Behance Showcase"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" style="width: 16px; height: 16px;">
+                <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                <path d="M3 12h4.5" />
+                <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                <path d="M16 8h3l-1.5 3h-1.5z" />
+              </svg></a>
           </div>
         </div>
       </div>
-      
+
       <!-- Footer Copyright -->
       <div class="footer-bottom">
         <div class="row align-items-center">
@@ -518,7 +634,8 @@
             <span class="footer-copyright">&copy; 2026 LUMEN PHOTOGRAPHY. ALL RIGHTS RESERVED.</span>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <ul class="d-inline-flex list-unstyled gap-4 mb-0 footer-links-list" style="flex-wrap: wrap; justify-content: center;">
+            <ul class="d-inline-flex list-unstyled gap-4 mb-0 footer-links-list"
+              style="flex-wrap: wrap; justify-content: center;">
               <li><a href="login.html" style="font-size: 0.75rem;">Client Portal</a></li>
               <li><a href="services.html" style="font-size: 0.75rem;">Licensing Terms</a></li>
               <li><a href="contact.html" style="font-size: 0.75rem;">Support</a></li>
@@ -548,10 +665,5 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/animations.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-

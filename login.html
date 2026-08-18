@@ -45,9 +45,9 @@
   <main class="auth-container" style="min-height: 100vh; padding-top: 60px; padding-bottom: 60px; flex-direction: column; gap: 30px; display: flex; align-items: center; justify-content: center;">
     <div class="auth-card">
       <div class="auth-brand-box" style="display: flex; justify-content: center; margin-bottom: 25px; margin-top: -10px;">
-        <a href="index.html" style="display: inline-flex; align-items: center; padding: 12px 24px; border: 1px solid var(--border-color); background-color: var(--surface-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); text-decoration: none; color: inherit;">
-          <svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 20px; height: 20px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg>
-          <span style="font-family: var(--font-serif); font-weight: 700; font-size: 1.1rem; letter-spacing: 0.15em; color: var(--primary-color);">LUMEN</span>
+        <a href="index.html" class="logo-editorial" style="display: inline-flex; align-items: center; padding: 12px 24px; border: 1px solid var(--border-color); background-color: var(--surface-color); box-shadow: 0 4px 20px rgba(0,0,0,0.02); text-decoration: none;">
+          <svg class="brand-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 22px; height: 22px; margin-right: 10px; color: var(--accent-color);"><path d="M3 21h18M3 10h18M3 3h18M7 3v18M17 3v18"></path></svg>
+          <span>LUMEN</span>
         </a>
       </div>
       <div class="auth-header">
@@ -68,7 +68,12 @@
           <input type="password" id="loginPassword" class="form-input-editorial" placeholder=" " value="password123" required>
           <label for="loginPassword" class="form-label-editorial">PASSWORD</label>
           <span class="validation-error-msg">Password is required.</span>
-          <button type="button" class="btn-show-password" id="btnTogglePassword" aria-label="Show password" style="position: absolute; right: 0; top: 12px; border: none; background: none; color: var(--text-secondary); font-size: 0.8rem; cursor: pointer;">SHOW</button>
+          <button type="button" class="btn-show-password" id="btnTogglePassword" aria-label="Show password" style="position: absolute; right: 0; top: 12px; border: none; background: none; color: var(--text-secondary); cursor: pointer; padding: 0; display: flex; align-items: center; justify-content: center;">
+            <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
         </div>
 
         <div class="d-flex justify-content-between align-items-center mb-4 font-sans" style="font-size: 0.8rem;">
@@ -147,7 +152,11 @@
         togglePass.addEventListener('click', function() {
           const type = passField.type === 'password' ? 'text' : 'password';
           passField.type = type;
-          this.textContent = type === 'password' ? 'SHOW' : 'HIDE';
+          if (type === 'password') {
+            this.innerHTML = `<svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+          } else {
+            this.innerHTML = `<svg class="eye-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+          }
         });
       }
       

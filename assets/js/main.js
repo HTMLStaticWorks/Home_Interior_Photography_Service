@@ -111,4 +111,30 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  // --- Back to Top Button ---
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.className = 'back-to-top-btn';
+  backToTopBtn.setAttribute('aria-label', 'Back to top');
+  backToTopBtn.innerHTML = `
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  `;
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  });
+
+  backToTopBtn.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });

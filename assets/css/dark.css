@@ -122,3 +122,8 @@ html[data-theme="dark"] .text-dark {
 html[data-theme="dark"] .google-map-iframe {
   filter: invert(90%) hue-rotate(180deg) grayscale(20%) contrast(90%);
 }
+
+/* Make calendar picker icon visible in dark theme */
+html[data-theme="dark"] input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
