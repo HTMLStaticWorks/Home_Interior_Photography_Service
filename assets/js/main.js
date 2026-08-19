@@ -137,4 +137,48 @@ document.addEventListener('DOMContentLoaded', function () {
       behavior: 'smooth'
     });
   });
+
+  // --- Mobile Menu Active Item Highlighting ---
+  const path = window.location.pathname;
+  let filename = path.substring(path.lastIndexOf('/') + 1);
+  if (filename === '' || filename === '/') {
+    filename = 'index.html';
+  }
+
+  // Map sub-detail pages to their parent menu items
+  let activeFilename = filename;
+  if (filename.includes('portfolio-details')) {
+    activeFilename = 'portfolio.html';
+  } else if (filename.includes('service-details')) {
+    activeFilename = 'services.html';
+  } else if (filename.includes('blog-details')) {
+    activeFilename = 'blog.html';
+  }
+
+  const mobileLinks = document.querySelectorAll('.mobile-menu a');
+  mobileLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === activeFilename || (activeFilename === 'index.html' && href === './')) {
+      link.classList.add('active');
+      
+      // If this is in a mobile submenu, highlight the parent too and keep it expanded
+      const submenu = link.closest('.mobile-submenu');
+      if (submenu) {
+        submenu.style.display = 'block';
+        const parentItem = submenu.closest('.mobile-menu-item');
+        if (parentItem) {
+          const parentLink = parentItem.querySelector('.mobile-link a');
+          if (parentLink) {
+            parentLink.classList.add('active');
+          }
+          const parentToggle = parentItem.querySelector('.mobile-dropdown-toggle');
+          if (parentToggle) {
+            parentToggle.textContent = '↑';
+            parentToggle.setAttribute('aria-expanded', 'true');
+          }
+        }
+      }
+    }
+  });
 });
+
